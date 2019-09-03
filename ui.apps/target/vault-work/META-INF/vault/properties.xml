@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>My AEM Project Content Package</comment>
+<entry key="createdBy">PrakharDhawan</entry>
+<entry key="name">example-project.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2019-08-27T16:54:21.380+0530</entry>
+<entry key="groupId">com.myco</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">my-packages</entry>
+<entry key="description">Maven Multimodule project for My AEM Project.</entry>
+<entry key="artifactId">example-project.ui.apps</entry>
+<entry key="path">/etc/packages/my-packages/example-project.ui.apps.zip</entry>
+</properties>

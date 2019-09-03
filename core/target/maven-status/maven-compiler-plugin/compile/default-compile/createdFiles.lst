@@ -1,0 +1,9 @@
+weatherform\core\filters\LoggingFilter.class
+weatherform\core\package-info.class
+weatherform\core\services\impl\TemperatureImpl.class
+weatherform\core\servlets\WeatherReportServlet.class
+weatherform\core\listeners\SimpleResourceListener.class
+weatherform\core\models\HelloWorldModel.class
+weatherform\core\schedulers\SimpleScheduledTask.class
+weatherform\core\services\Temperature.class
+weatherform\core\schedulers\SimpleScheduledTask$Config.class

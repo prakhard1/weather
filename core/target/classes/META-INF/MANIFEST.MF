@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1566905055608
+Build-Jdk: 1.8.0_181
+Built-By: PrakharDhawan
+Bundle-Description: Maven Multimodule project for My AEM Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: My AEM Project Bundle
+Bundle-SymbolicName: com.myco.example-project
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: weatherform.core.filters;uses:="javax.servlet";version="
+ 0.0.1",weatherform.core.listeners;uses:="org.osgi.service.event";versio
+ n="0.0.1",weatherform.core.models;uses:="javax.annotation,org.apache.sl
+ ing.api.resource,org.apache.sling.models.annotations,org.apache.sling.m
+ odels.annotations.injectorspecific";version="0.0.1",weatherform.core;ve
+ rsion="1.0",weatherform.core.schedulers;version="0.0.1",weatherform.cor
+ e.services;version="0.0.1",weatherform.core.servlets;uses:="javax.servl
+ et,org.apache.sling.api,org.apache.sling.api.servlets";version="0.0.1"
+Import-Package: com.day.cq.wcm.api;version="[1.21,2)",javax.annotation,j
+ avax.servlet;version="[3.0,4)",org.apache.http,org.apache.http.client,o
+ rg.apache.http.client.methods,org.apache.http.impl.client,org.apache.sl
+ ing.api;version="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)
+ ",org.apache.sling.api.resource;version="[2.10,3)",org.apache.sling.api
+ .servlets;version="[2.2,3)",org.apache.sling.models.annotations;version
+ ="[1.4,2)",org.apache.sling.models.annotations.injectorspecific;version
+ ="[1.1,2)",org.apache.sling.settings;version="[1.3,2)",org.osgi.service
+ .event;version="[1.3,2)",org.slf4j;version="[1.7,2)",weatherform.core.s
+ ervices
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.Run
+ nable",osgi.service;objectClass:List<String>="javax.servlet.Filter",osg
+ i.service;objectClass:List<String>="javax.servlet.Servlet",osgi.service
+ ;objectClass:List<String>="org.osgi.service.event.EventHandler",osgi.se
+ rvice;objectClass:List<String>="weatherform.core.services.Temperature"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(objectC
+ lass=weatherform.core.services.Temperature)";effective:=active,osgi.ee;
+ filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/weatherform.core.filters.LoggingFilter.xml,O
+ SGI-INF/weatherform.core.listeners.SimpleResourceListener.xml,OSGI-INF/
+ weatherform.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/Temperatur
+ e-Service.xml,OSGI-INF/weatherform.core.servlets.WeatherReportServlet.x
+ ml
+Tool: Bnd-3.3.0.201609221906
