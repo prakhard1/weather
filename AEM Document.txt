@@ -1,0 +1,79 @@
+Java Installation - https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-microsoft-windows-platforms.htm#JSJIG-GUID-A7E27B90-A28D-4237-9383-A58B416071CA
+
+Maven Installation - https://www.mkyong.com/maven/how-to-install-maven-in-windows/
+
+Sample Components - http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html
+
+Adobe Components - http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html
+
+https://helpx.adobe.com/support/experience-manager.html
+
+For Learning 
+first login - https://captivateprime.adobe.com/acapindex.html   
+userid/pwd - shwkhann@adobe.com/Kiran@8765497122
+Courses Backend-- https://cpcontents.adobe.com/public/newlearner/newlearner_6cba05d4.html#/course/559584/overview?cert_id=undefined&lp_id=undefined
+Front End - https://cpcontents.adobe.com/public/newlearner/newlearner_6cba05d4.html?accountId=29997&userId=4378918#/learningProgram/9769/overview
+
+Slighty Quick reference - http://aemtuts.com/aem-sightly-quick-reference/
+
+
+How to change and check the RunModes
+Step 1 - Change the sling.properties file.
+
+
+    Edit the configuration file:
+        <cq-installation-dir>/crx-quickstart/conf/sling.properties
+    Add the following properties; the following example is for author:
+        sling.run.modes=author
+
+Step 2 Restart the AEM.
+Step 3 Login to Felix Console.
+Step 4 Check the Sling Setting under Status.
+Step 5 Check the Run Modes.
+
+
+How to run your AEM in debug models
+1. Go to crx-quickstart/bin
+2. Copy and Paste the start.batch and rename the copy as debug.batch
+3. Edit debug.batch using the notepad
+4. Edit the default jvm options - 
+       ::* default JVM options
+       if not defined CQ_JVM_OPTS set CQ_JVM_OPTS=-Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n
+
+How to check the resource?
+1 Login to Felix console.
+2 Select Sling Servlet Resolver from Status
+3 Enter the path on which your servlet is registered.
+4 Select the Method 
+5 Click on Resolve
+
+Check the Bundle Status
+1 Login to Felix Console
+2 Select Bundles
+3 Search for your bundle
+4 Click on your bundle
+
+
+Push your project from local to Github
+git init
+git add README.md
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/userName/repoName.git
+git push --force origin master
+
+
+Sling Servlet - https://sling.apache.org/documentation/the-sling-engine/servlets.html
+
+Apache Sling Model - https://sling.apache.org/documentation/bundles/models.html
+
+Dispatcher - https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-page-renderers-renders
+
+AEM Scheduler - https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
+
+Git commands - https://git-scm.com/docs/gittutorial
+
+Archtype to generate project - mvn archetype:generate -Padobe-public -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=18
+
+Maven to install Bundle - mvn intall -PautoInstallBundle
+
